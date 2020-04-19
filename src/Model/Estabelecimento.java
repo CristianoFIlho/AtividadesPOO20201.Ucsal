@@ -9,10 +9,10 @@ public class Estabelecimento {
     private Date HorarioFuncionamento;
     private String Instagram;
     private String Whatsapp;
-    private String Tempo_Medio_minutos;
+    private Integer Tempo_Medio_minutos;
     private EnumCategoria categorias;
 
-    public Estabelecimento(String cidade, Integer diasFuncionamento, Boolean retirada, Boolean delivery, Date horarioFuncionamento, String instagram, String whatsapp, String tempo_Medio_minutos, EnumCategoria categorias) {
+    public Estabelecimento(String cidade, Integer diasFuncionamento, Boolean retirada, Boolean delivery, Date horarioFuncionamento, String instagram, String whatsapp, Integer tempo_Medio_minutos, EnumCategoria categorias) {
         Cidade = cidade;
         DiasFuncionamento = diasFuncionamento;
         Retirada = retirada;
@@ -80,11 +80,11 @@ public class Estabelecimento {
         Whatsapp = whatsapp;
     }
 
-    public String getTempo_Medio_minutos() {
+    public Integer getTempo_Medio_minutos() {
         return Tempo_Medio_minutos;
     }
 
-    public void setTempo_Medio_minutos(String tempo_Medio_minutos) {
+    public void setTempo_Medio_minutos(Integer tempo_Medio_minutos) {
         Tempo_Medio_minutos = tempo_Medio_minutos;
     }
 
